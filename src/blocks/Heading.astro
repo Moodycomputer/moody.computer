@@ -1,0 +1,24 @@
+---
+
+---
+<header class="Heading">
+  <h1 class="Heading_text">Moody <br/>Computer</h1>
+</header>
+
+<style>
+  .Heading {
+    min-height: 100vh;
+    /* padding: 4vh 0 0; */
+  }
+  .Heading_text {
+    font: italic 500 min(50vh, 24.5vw)/.8 var(--font-family);
+    margin: 0;
+    transform: rotate(-10deg);
+    width: min-content;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: .16em;
+    }
+  }
+</style>

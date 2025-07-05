@@ -1,16 +1,30 @@
 ---
-
+import "../styles/reset.css"
+import Heading from "../blocks/Heading.astro"
+import About from "../blocks/About.astro"
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="https://use.typekit.net/uel2cel.css">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Christopher Moody</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Heading />
+		<About />
 	</body>
+	<style>
+		:root {
+			--font-family: freight-text-pro, serif; 
+		}
+		body {
+			font: normal 400 1rem/1.25 var(--font-family) serif;
+			background: #e0dfd9;
+			color: #312f2f;
+		}
+	</style>
 </html>
